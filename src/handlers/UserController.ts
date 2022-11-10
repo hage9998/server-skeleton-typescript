@@ -33,8 +33,10 @@ class UserController {
   };
 
   static newUser = async (req: Request, res: Response) => {
+    console.log("entrou");
     //Get parameters from the body
     const { username, password, role } = req.body;
+    console.log(password);
     const user = new User();
     user.username = username;
     user.password = password;
