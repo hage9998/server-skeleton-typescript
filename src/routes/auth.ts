@@ -30,13 +30,7 @@ class AuthRoutes {
         const request = req.body as AuthLoginRequest;
         const response = await this.authLoginHandler.execute(request);
 
-        res
-          .status(200)
-          .json({
-            authorization: response.token,
-            id: "bla",
-            email: "bla@gmail.com",
-          });
+        res.status(200).json({ authorization: response.token });
       } catch (error) {
         next(error);
       }
