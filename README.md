@@ -1,4 +1,4 @@
-# This project focuses on creating a backend server to a shopee project using the Hexagonal architecture and the following tools:
+# This project focuses on creating a backend server skeleton using the Hexagonal architecture and the following tools:
 - Typescript;
 - Node and Express;
 - TypeORM;
